@@ -1,0 +1,366 @@
+.admin {
+    color: #cac0b3;
+}
+
+.titre {
+    width: 1000px; /* Largeur fixe pour les grands écrans */
+    font-size: 25pt;
+    margin-left: 300px; /* Marge à gauche pour les grands écrans */
+    padding-bottom: 25px;
+}
+
+.indexAdmin {
+    margin-top: 50px;
+    display: grid;
+    place-items: center;
+    padding: 20px; /* Ajout de padding pour espacer le contenu */
+    width: 100%; /* Largeur maximale pour s'adapter à l'écran */
+    box-sizing: border-box; /* Inclure le padding dans la largeur totale */
+}
+
+/* Media queries pour les téléphones */
+@media (max-width: 768px) {
+    .titre {
+        width: 100%; /* Pleine largeur sur les téléphones */
+        margin-left: 0; /* Aucune marge à gauche sur les téléphones */
+        text-align: center; /* Centrer le texte */
+        font-size: 20pt; /* Taille de police ajustée */
+        padding-bottom: 15px; /* Espacement réduit en bas */
+    }
+
+    .indexAdmin {
+        padding: 10px; /* Réduire le padding pour les téléphones */
+    }
+}
+
+.indexSuperAdmin{
+    margin-top: 50px;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column; /* Aligner les div en colonne */
+    align-items: center; /* Centrer les div horizontalement */
+    justify-content: center;
+
+}
+
+/*.connexion_container{
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+    margin-top:5px;
+    margin-left: 550px;
+    padding-bottom:  10px;
+
+}
+.sectionConnexionAdmin{
+    margin-top: 50px;
+    display: flex;
+
+}
+
+
+.connexion_container input{
+    background-color: #eee;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 200px;
+    outline: none;
+}
+
+.form-connexion_container{
+    width: 30%;
+    margin-top: 90px;
+    margin-left: 250px;
+    height: 100%;
+
+
+}
+input#connexion{
+    margin-left: 15px;
+}
+div#container.container{
+    background : #DEDEDE;
+}
+legend{
+    padding-bottom: 35px;
+    font-size: 18pt;
+}
+#input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    height: 100%;
+    width: 250px
+}
+.connexion_auto{
+    display: flex;
+    flex-direction: row;
+    width: 230px;
+}
+input#connexion_auto{
+    width: 15px;
+    margin-bottom: 5px;
+}
+#lblConnexionAuto{
+    width: 100%;
+}*/
+.sectionConnexionAdmin {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.connexion_container {
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px; /* Largeur maximale ajustée pour une meilleure lecture sur les ordinateurs */
+    padding: 20px;
+    margin-top: 5px;
+}
+
+.form-connexion_container {
+    width: 100%;
+    max-width: 400px; /* Largeur maximale du formulaire */
+    margin: 0 auto; /* Centrage horizontal */
+}
+
+.form-connexion_container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-connexion_container legend {
+    font-size: 18pt;
+    padding-bottom: 20px;
+}
+
+.form-connexion_container .input {
+    margin-bottom: 10px;
+}
+
+.form-connexion_container .input label {
+    font-weight: bold;
+}
+
+.form-connexion_container .input input[type="text"],
+.form-connexion_container .input input[type="password"] {
+    background-color: #eee;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+
+.connexion_auto {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.connexion_auto label {
+    margin-right: 10px;
+}
+
+.connexion_auto input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+#connexion {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-left: 15px;
+}
+
+/* Media query pour les téléphones */
+@media (max-width: 768px) {
+    .connexion_container {
+        border-radius: 20px; /* Ajustement du bord pour les téléphones */
+    }
+    
+    .form-connexion_container {
+        padding: 15px; /* Ajustement du padding */
+    }
+
+    .form-connexion_container legend {
+        font-size: 16pt; /* Ajustement de la taille de police pour les légendes */
+    }
+
+    .form-connexion_container .input input[type="text"],
+    .form-connexion_container .input input[type="password"] {
+        font-size: 12px; /* Ajustement de la taille de police pour les champs de saisie */
+    }
+}
+
+
+.deconnexion{
+    border-radius: 30px;
+    border: solid 1px  #ff595a;
+    text-decoration: none;
+    background: #ff595a;
+    width: 150px;
+}
+.deconnexion a{
+    text-decoration: none;
+    color:#001233;
+    background: #ff595a;
+}
+.textdeconnexion {
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 30px;
+}
+form {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: top;
+}
+
+.bouton_form{
+    text-decoration: none;
+    color:#001233;
+    background: #ff595a;
+    border: solid 1px #ff595a;
+    border-radius: 30px;
+}
+
+
+/*.produit {
+    border: 1px solid rgba(60, 192, 217, 0.5);
+    box-shadow: 5px 5px 5px 1px rgba(60, 192, 217, 0.5);
+    background: rgb(60, 192, 217);
+    border-radius: 30px;
+    padding: 10px;
+    margin-top: 20px;
+    height: auto;
+    width: 50%;
+     
+    display: flex;
+    flex-direction: column;  Aligner les div en colonne 
+    align-items: center;  Centrer les div horizontalement 
+    justify-content: center;  Centrer les div verticalement 
+
+}
+.produit h2{
+    text-align: center;
+    padding-bottom: 15px;
+    text-decoration:underline;
+}*/
+.produit {
+    border: 1px solid rgba(60, 192, 217, 0.5);
+    box-shadow: 5px 5px 5px 1px rgba(60, 192, 217, 0.5);
+    background: rgb(60, 192, 217);
+    border-radius: 30px;
+    padding: 20px; /* Augmenté pour améliorer l'espacement du contenu */
+    margin-top: 20px;
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.produit h2 {
+    text-align: center;
+    padding-bottom: 15px;
+    text-decoration: underline;
+    color: #fff; /* Couleur de texte blanche pour contraster avec le fond */
+}
+
+/* Media queries pour les téléphones */
+@media (max-width: 768px) {
+    .produit {
+        width: 90%; /* Pleine largeur sur les téléphones */
+        padding: 20px; /* Réduit le padding pour les petits écrans */
+    }
+}
+
+.formModifierActualite {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.formModifierActualite label,
+.formModifierActualite select,
+.formModifierActualite input {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.formModifierActualite .bouton_form {
+    margin-top: 10px;
+    align-self: center;
+}
+.utilisateur, .Actualite {
+    border: 1px solid rgba(60, 192, 217, 0.5);
+    box-shadow: 5px 5px 5px 1px rgba(60, 192, 217, 0.5);
+    background: rgb(60, 192, 217);
+    border-radius: 30px;
+    padding: 10px;
+    margin-top: 20px;
+    height: auto;
+    width: 50%;
+    margin-left: 0; /* Réinitialiser la marge gauche pour centrer correctement */
+    display: flex;
+    flex-direction: column; /* Aligner les div en colonne */
+    align-items: center; /* Centrer les div horizontalement */
+    justify-content: center; /* Centrer les div verticalement */
+}
+
+.formAjouterUtilisateur, .formSuppUtilisateur, #selectUtilisateurForm, .formAjouterActualite, .formSuppActualite, #selectActualiteForm {
+    margin: 20px 0; /* Ajouter de l'espace entre les formulaires */
+}
+
+.titre_modifier_ajouter_supp {
+    margin-bottom: 20px; /* Ajouter de l'espace sous les titres */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .utilisateur, .Actualite {
+        width: 90%; /* Réduire la largeur des sections sur les petits écrans */
+    }
+
+    .titre {
+        width: 90%;
+        text-align: center;
+    }
+    .formModifierActualite label,
+    .formModifierActualite select,
+    .formModifierActualite input {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
+
+
+
+

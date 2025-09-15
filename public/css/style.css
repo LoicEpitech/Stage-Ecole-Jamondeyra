@@ -1,0 +1,1120 @@
+body {
+    font-family: 'Poppins', sans-serif;
+
+    color: #48494a;
+    background-image: url(../images/fond_logo.png);
+}
+
+.btn {
+    display: none; /* Masqué par défaut */
+    position: fixed; /* Fixé en bas à droite de la page */
+    bottom: 20px;
+    right: 20px;
+    z-index: 100; /* Au-dessus des autres éléments */
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.2); /* Change le fond au survol */
+}
+
+.btn .icone {
+    width: 30px; /* Ajuste la taille de l'icône */
+    height: 30px;
+}
+
+
+.icone {
+    width: 50px;
+}
+
+.layout_padding {
+    padding: 80px 0;
+}
+
+.layout_padding2 {
+    padding: 45px 0;
+}
+
+.layout_padding2-top {
+    padding-top: 45px;
+}
+
+.layout_padding-top {
+    padding-top: 75px;
+}
+
+.layout_padding-bottom {
+    padding-bottom: 75px;
+}
+
+.call_to-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color: #8367cd;
+    border: 1px solid transparent;
+    color: #fff;
+    transition: all 0.3s ease 0s;
+}
+
+.hero_section .call_to-btn {
+    padding: 12px 35px;
+}
+
+.call_to-btn img {
+    width: 18px;
+    margin-left: 10px;
+}
+
+.btn_on-hover {
+    transition: all 0.3s ease 0s;
+}
+
+.call_to-btn:hover,
+.btn_on-hover:hover {
+    color: #fff;
+    -webkit-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.7);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.main-heading {
+    color: #8764c8;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px; /* Espace en bas du titre */
+    padding: 10px; /* Ajouter un peu de padding */
+}
+
+/*header section*/
+
+.header_section {
+    padding-top: 10px;
+
+}
+
+nav.navbar.navbar-expand-lg {
+
+    padding: 10px 0;
+}
+
+.custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 10px 20px;
+    color: #2d2c2c;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.custom_nav-container.navbar-expand-lg .navbar-nav .nav-item.active .nav-link {
+    color: #232323;
+}
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: initial;
+}
+
+.btn,
+.btn:focus {
+    outline: none !important;
+    box-shadow: none;
+}
+
+.top_container {
+    height: 80vh;
+    position: relative;
+}
+
+.top_container::before {
+    content: "";
+    position: absolute;
+    width: 48%;
+    height: 80%;
+    background: url(../images/hero-bg2.png);
+    background-size: cover;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    z-index: -1;
+    border-radius:65% 35% 100% 0% / 0% 63% 37% 100%   ;
+}
+
+.top_container.sub_pages::before {
+    background-size: 400px 200px;
+    background-position: top left;
+}
+
+.top_container.sub_pages {
+    height: 35vh;
+}
+
+.top_container.sub_page {
+    height: auto;
+}
+
+.navbar-brand img {
+    width: 25px;
+    margin-right: 7px;
+}
+
+
+.custom_nav-container .nav_search-btn {
+    background-image: url(../images/search-icon.png);
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-position-y: 7px;
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    border: none;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand span {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fefefe;
+}
+
+.custom_nav-container {
+    z-index: 99999;
+    padding: 15px 0;
+}
+
+.custom_nav-container .navbar-toggler {
+    outline: none;
+}
+
+.custom_nav-container .navbar-toggler .navbar-toggler-icon {
+    background-image: url(../images/menu.png);
+    background-size: 40px;
+}
+
+/*end header section*/
+
+/* hero section */
+
+.hero-container {
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 75px;
+}
+
+.hero_detail-box {
+    width: 45%;
+
+}
+
+.hero_img-container {
+    width: 55%;
+}
+
+.hero_detail-box {
+    color: black;
+
+}
+
+
+.hero_detail-box h1 {
+
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #8367cd;
+    font-weight: bold;
+
+}
+.logo_presentation{
+    width: 80%;
+}
+
+
+.hero_detail-box p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+/* end hero section */
+
+/* about section */
+
+#containerAbout, text-center{
+    line-height: 2.5; /* Espace entre les lignes, valeur de 1.6 fois la hauteur de la ligne de base */
+    background: #fff;
+
+}
+
+.about_img-box {
+    width: 65%;
+    margin: 40px auto;
+}
+
+/* about section */
+
+
+/* vehicle section */
+.vehicle_img-box {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.vehicle_section .carousel-control-prev,
+.vehicle_section .carousel-control-next {
+    opacity: 1;
+}
+
+.vehicle_section .carousel-control-prev-icon,
+.vehicle_section .carousel-control-next-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #082465;
+    border-radius: 100%;
+    background-size: 10px;
+    background-position: center;
+}
+
+/* Centrer le texte et définir des marges pour le p */
+.text-centre, .text-cantine, .text-garderie {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+/* Assurer que les images ont la même hauteur et largeur */
+.vehicle_img-box img {
+    width: 100%;
+    height: 500px; /* Définir une hauteur fixe */
+    object-fit: cover; /* Pour que l'image couvre tout le conteneur sans déformation */
+}
+
+/* Pour le conteneur de l'image */
+.vehicle_img-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Pour le conteneur de la légende */
+.vehicle_img-box p {
+    margin: 0;
+    min-height: 80px; /* Ajuster cette valeur selon vos besoins */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.vehicle_section .carousel-control-prev-icon {
+    background-image: url(../images/prev.png);
+}
+
+.vehicle_section .carousel-control-next-icon {
+    background-image: url(../images/next.png);
+}
+
+
+
+/* end vehicle section */
+
+/* client section */
+.client_section {
+    background-image: url(../images/shape21.jpg);
+    background-repeat: no-repeat;
+
+    background-position: right;
+
+    background-size: 18%;
+}
+
+.client_container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 35px;
+    background-color: #fefeff;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(163, 158, 163, 1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(163, 158, 163, 1);
+    box-shadow: 0px 0px 5px 0px rgba(163, 158, 163, 1);
+    border-radius: 20px;
+}
+
+.client_detail-box h4 {
+    color: #082465;
+}
+
+.client_detail-box span {
+    text-transform: uppercase;
+    color: #48494a;
+}
+
+.client_detail .client_img-box {
+    width: 100px;
+    margin-right: 15px;
+}
+
+.client_detail .client_img-box img {
+    width: 100%;
+}
+
+.comment {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.comment-header {
+    display: flex;
+    align-items: center;
+}
+
+.comment-header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.comment-meta {
+    flex-grow: 1;
+}
+
+.comment-meta h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.comment-meta .comment-date {
+    font-size: 14px;
+    color: #666;
+}
+
+.comment-content p {
+    margin: 0;
+    font-size: 16px;
+    color: #444;
+}
+
+.stars {
+    color: #ffcc00; /* Couleur jaune pour les étoiles */
+    font-size: 24px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.rating-value {
+    margin-left: 10px;
+    font-size: 16px;
+    color: #666;
+}
+
+
+/* end client section */
+
+
+/* contact section */
+.message {
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Largeur maximale du message */
+    width: 100%;
+}
+
+.btn-ok {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-ok:hover {
+    background-color: #45a049;
+}
+
+
+.contact_section {
+    width: 100%;
+    padding: 40px 0;
+    background-image: url(../images/hero.png);
+    background-repeat:no-repeat;
+    background-size: 17%;
+}
+
+.containerA {
+
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.text-center {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact_section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.contact-form div {
+    margin-bottom: 15px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.contact-form button:focus {
+    outline: none;
+}
+
+.message {
+    margin-bottom: 20px;
+}
+.btn-ok {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+.btn-ok:hover {
+    background-color: #0056b3;
+}
+
+/* end contact section */
+
+/* admission section */
+
+
+.admission_section .container-fluid.position-relative {
+    height: 500px;
+}
+
+.admission_container {
+    width: 770px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+
+.admission_img-box {
+    width: 50%;
+    border-radius: 25px 0 0 25px;
+    overflow: hidden;
+}
+
+.admission_detail {
+    width: 50%;
+    background-color: #082465;
+    padding: 20px;
+    color: #fefeff;
+    border-radius: 0 25px 25px 0;
+}
+
+
+.admission_img-box img {
+    width: 100%;
+}
+
+.admission_detail .admission_btn {
+    background-color: #fec913;
+    padding: 7px 35px;
+    color: #fefeff;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+/* end admission section */
+
+/* call section */
+.call_section h2 {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.landing_section .number_heading {
+    color: #fec913;
+}
+
+.landing_section p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* end call section */
+
+/* footer section*/
+
+
+
+
+footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Permet le retour à la ligne des éléments sur les petits écrans */
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ccc;
+    position: relative;
+
+}
+
+
+
+.social-media a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+
+/*Utiliser flexbox pour aligner les icônes horizontalement */
+.social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.social-media a {
+    margin: 0 5px;
+}
+
+.social-media a img {
+    vertical-align: middle;  /*Alignement vertical des images */
+}
+
+/*Container pour les icônes afin de les centrer horizontalement */
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espacement entre les icônes */
+}
+
+.legal-mentions {
+    text-align: right;
+    margin-right: 100px;
+}
+.social-media h2 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+.social-media {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+
+}
+
+.social-media h2 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #333;
+}
+
+.social-media a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+
+/*Utiliser flexbox pour aligner les icônes horizontalement */
+.social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media a {
+    margin: 0 5px;
+}
+
+.social-media a img {
+    vertical-align: middle; /* Alignement vertical des images */
+}
+
+/* Container pour les icônes afin de les centrer horizontalement */
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espacement entre les icônes */
+}
+.legal-mentions h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.legal-mentions p {
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+
+.legal-mentions a {
+    text-decoration: none;
+    color: #333;
+}
+
+.legal-mentions a:hover {
+    text-decoration: underline;
+}
+
+
+/* end footer section*/
+
+/* Article section*/
+
+/*.article_actu {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.article_actu article{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.article_actu article:hover {
+    transform: translateY(-10px);
+}
+
+ Image styles 
+.article_actu img {
+    width: 400px;  Increased width for larger image 
+    height: auto;
+    border-radius: 10px;
+    flex-shrink: 0;
+    object-fit: cover;  Assurez-vous que l'image s'adapte correctement 
+}
+
+.article_actu aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-grow: 1;
+}
+
+ Title styles 
+.article_actu h1 {
+    font-size: 2em;  Larger font size for title 
+    margin: 0;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+ Date styles 
+.article_actu p {
+    font-size: 1.2em;  Larger font size for date 
+    color: #777;
+    margin: 5px 0 15px;  Adjusted margins 
+}
+
+ Description styles 
+.article_actu h3 {
+    font-size: 1.5em;  Larger font size for description 
+    color: #555;
+    margin-top: 10px;
+}
+
+ Modal styles 
+.modal {
+    display: none;  Hidden by default 
+    position: fixed;  Stay in place 
+    z-index: 1;  Sit on top 
+    padding-top: 60px;  Location of the box 
+    left: 0;
+    top: 0;
+    width: 100%;  Full width 
+    height: 100%;  Full height 
+    overflow: auto;  Enable scroll if needed 
+    background-color: rgb(0, 0, 0);  Fallback color 
+    background-color: rgba(0, 0, 0, 0.9);  Black w/ opacity 
+
+
+
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 70%;  Ajustez cette valeur pour agrandir ou réduire la taille maximale de l'image 
+    max-height: 90vh;  Limite la hauteur de l'image à 90% de la hauteur de la vue 
+}
+
+.modal-content, .close {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+    .article_actu {
+        grid-template-columns: repeat(2, 1fr);  2 colonnes sur les écrans plus larges 
+    }
+}
+
+@media (min-width: 1200px) {
+    .article_actu {
+        grid-template-columns: repeat(3, 1fr);  3 colonnes sur les grands écrans 
+    }
+}
+
+
+@media (min-width: 768px) {
+    .article_actu article {
+        flex-direction: row;  Disposition en ligne pour les écrans plus larges 
+        align-items: flex-start;
+    }
+}
+
+@media (min-width: 768px) {
+    .modal-content {
+        max-width: 70%;  Ajustement pour les écrans plus larges 
+    }
+}*/
+/* Styles de base pour la section des actualités */
+.article_actu {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Styles pour chaque article d'actualité */
+.article_actu article {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    align-items: flex-start; /* Alignement des articles */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Effet de survol sur les articles */
+.article_actu article:hover {
+    transform: translateY(-10px);
+}
+
+/* Styles pour l'image d'actualité */
+.article_actu img {
+    width: 400px; /* Taille de l'image pour les ordinateurs */
+    height: auto;
+    border-radius: 10px;
+    flex-shrink: 0;
+    object-fit: cover; /* Assurez-vous que l'image est bien ajustée */
+}
+
+/* Styles pour le contenu de l'actualité */
+.article_actu aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-grow: 1;
+    max-height: 80%;
+    max-width: 50%;
+}
+
+/* Styles pour le titre d'actualité */
+.article_actu h1 {
+    font-size: 2em; /* Taille de police pour le titre */
+    margin: 0;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Styles pour la date d'actualité */
+.article_actu p {
+    font-size: 1.2em; /* Taille de police pour la date */
+    color: #777;
+    margin: 5px 0 15px; /* Marges ajustées */
+}
+
+/* Styles pour la description d'actualité */
+.article_actu h3 {
+    font-size: 1.5em; /* Taille de police pour la description */
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Styles pour le modal */
+/*.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+ Styles pour le contenu du modal 
+.modal-content {
+    margin: auto;
+    margin-top: 10%;
+    display: block;
+    max-width: 100%;  Ajustement de la largeur maximale de l'image modale pour les ordinateurs 
+    max-height: 100%;  Limite la hauteur de l'image modale à 90% de la hauteur de la vue 
+}*/
+.modal {
+    display: none;  /*Hidden by default */
+    position: fixed;  /*Stay in place */
+    z-index: 1;  /*Sit on top */
+    padding-top: 60px;  /*Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);/* Black w/ opacity */
+
+
+
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 70%;  /*Ajustez cette valeur pour agrandir ou réduire la taille maximale de l'image */
+    max-height: 90vh; /* Limite la hauteur de l'image à 90% de la hauteur de la vue */
+}
+
+/* Animation pour le modal */
+.modal-content, .close {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Styles pour le bouton de fermeture du modal */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Media queries pour les téléphones */
+@media (max-width: 767px) {
+    .article_actu {
+        padding: 10px; /* Réduction de l'espacement */
+        gap: 10px; /* Réduction de l'espacement entre les articles */
+    }
+    
+    .article_actu article {
+        flex-direction: column; /* Disposition en colonne sur les téléphones */
+    }
+
+    .article_actu img {
+        width: 100%; /* Image occupe toute la largeur sur les téléphones */
+        height: auto;
+    }
+
+    .modal-content {
+        max-width: 90%; /* Ajustement de la largeur maximale de l'image modale pour les téléphones */
+    }
+}
+
+/* end Article section*/
+/* start photo section*/
+/* Styles de la galerie lightbox */
+.lightbox-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.lightbox-gallery a {
+    flex: 1 0 21%; /* Trois images par ligne sur les grands écrans */
+    max-width: 500px; /* Limite la largeur des images */
+    box-sizing: border-box;
+    transition: transform 0.3s;
+    text-decoration: none;
+}
+
+.lightbox-gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.lightbox-gallery a:hover {
+    transform: scale(1.05);
+}
+
+.lightbox-gallery a:focus {
+    outline: 2px solid #00f;
+    transform: scale(1.05);
+}
+.titreGalerie{
+    text-align: center;
+    margin: 1%;
+
+}
+/* end photo section*/
+
